@@ -11,9 +11,9 @@ resource "aws_vpc" "main_vpc" {
     Name = var.vpc_name
   }
 
-  lifecycle {
-    prevent_destroy = true
-  }
+  # lifecycle {
+  #   prevent_destroy = true
+  # }
 }
 
 resource "aws_subnet" "private_subnet" {
